@@ -35,11 +35,22 @@
         <button id="sentimg" onClick="PostImageToFacebook()">Post to Facebook</button><!-- 傳送按鈕-->
     </div>
     <div class="info"></div><!-- 訊息欄位-->
+	
+	<div class="fb-like" data-href="https://www.facebook.com/hhheyaidn" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
 
     
 
     <script type="text/javascript" src="js/script.js"></script>
 </body>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&appId=632044590213182&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
 </html>
 
