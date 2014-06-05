@@ -35,11 +35,9 @@ FB.getLoginStatus(function(response) {
 	ctx.font='20px "Arial"'; //設定字體與大小
 	ctx.fillText("Click here to start fill with Facebook Profile Picture", 40, 270); //設定預設的開始畫面
     var img = new Image(); // 新增圖像1
-    img.src = "img/overlay.png"; //圖像路徑（路徑自己設，且自己加入想要的圖層）
-	var img2 = new Image(); //新增圖像2
-	img2.src = "img/overlayback.png" //圖像路徑
+    img.src = "img/back.jpg"; //圖像路徑（路徑自己設，且自己加入想要的圖層）
 	var img3 = new Image();//新增圖像3
-	img3.src = "img/typography.png"//圖像路徑
+	img3.src = "img/text.jpg"//圖像路徑
 	
 	
 
@@ -86,7 +84,7 @@ FB.getLoginStatus(function(response) {
 			//canvas.height = profileIMG.height;
 			ctx.drawImage(img,0,0); //劃入img2
 			ctx.drawImage(img3,0,0);//從XY軸0，0值開始畫如profileimg
-			ctx.drawImage(profileIMG,canMouseX,canMouseY+20); //劃入img3，並根據你的滑鼠游標移動，你可以自行更換想要移動的圖層，數值會因XY軸向有所不同
+			ctx.drawImage(profileIMG,canMouseX,canMouseY); //劃入img3，並根據你的滑鼠游標移動，你可以自行更換想要移動的圖層，數值會因XY軸向有所不同
 			
 			var inputedText = $('#inputed').val();//抓取頁面inputed ID的內容
 			ctx.fillStyle = "black"; //字體顏色
