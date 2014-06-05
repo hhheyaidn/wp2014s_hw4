@@ -111,10 +111,12 @@ FB.getLoginStatus(function(response) {
 function login(){
 	FB.login(function(response){
 		if(response.authResponse){
+			window.location.reload();
 		}
 		else {
 		}
-	},{scope:'publish_actions'});
+	},
+	{scope:'publish_actions'});
 }
    
 
