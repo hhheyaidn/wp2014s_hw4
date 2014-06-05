@@ -42,7 +42,9 @@ body {
     line-height: 13px;
 }
 
-
+img{
+	size:200%;
+}
 
 /*
 Colorbox Core Style:
