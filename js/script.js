@@ -38,7 +38,7 @@ FB.getLoginStatus(function(response) {
     img.src = "img/back.jpg"; //圖像路徑（路徑自己設，且自己加入想要的圖層）
 	var img3 = new Image();//新增圖像3
 	img3.src = "img/text.jpg"//圖像路徑
-	
+	 
 	
 
 	//宣告基本變數
