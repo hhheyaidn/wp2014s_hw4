@@ -115,7 +115,7 @@ function login(){
 		}
 		else {
 		}
-	},scope:'publish_actions')
+	},scope:'publish_actions');
 }
    
 
