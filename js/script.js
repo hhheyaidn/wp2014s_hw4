@@ -83,7 +83,7 @@ FB.getLoginStatus(function(response) {
 			//canvas.width = img.width;//設定canvas的大小需符合profileimg的大小
 			canvas.height = img.height;
 			ctx.drawImage(img,0,0); //劃入img2
-			ctx.drawImage(img3,200,400);
+			ctx.drawImage(img3,180,440);
 			ctx.drawImage(profileIMG,canMouseX,canMouseY); 
 			
 			var inputedText = $('#inputed').val();//抓取頁面inputed ID的內容
