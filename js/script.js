@@ -86,7 +86,7 @@ FB.getLoginStatus(function(response) {
 			//canvas.height = profileIMG.height;
 			ctx.drawImage(img,0,0); //劃入img2
 			ctx.drawImage(img3,0,0);//從XY軸0，0值開始畫如profileimg
-			ctx.drawImage(profileIMG,canMouseX,canMouseY); //劃入img3，並根據你的滑鼠游標移動，你可以自行更換想要移動的圖層，數值會因XY軸向有所不同
+			ctx.drawImage(profileIMG,canMouseX+50,canMouseY+50); //劃入img3，並根據你的滑鼠游標移動，你可以自行更換想要移動的圖層，數值會因XY軸向有所不同
 			
 			var inputedText = $('#inputed').val();//抓取頁面inputed ID的內容
 			ctx.fillStyle = "black"; //字體顏色
