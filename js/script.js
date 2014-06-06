@@ -100,14 +100,9 @@ FB.getLoginStatus(function(response) {
     $("#canvas").mouseup(function(e){handleMouseUp(e);});
     $("#canvas").mouseout(function(e){handleMouseOut(e);});
 
-
 //可以思考這程式要放在init內還是init外?
 
-
-
-
 }; //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<init end
-
 
 function login(){
 	FB.login(function(response){
@@ -119,10 +114,6 @@ function login(){
 	},
 	{scope:'publish_actions'});
 }
-   
-
-
-
 
 //LOAD FACEBOOK SDK ASYNC，這是基本的東西，應該不用多說了吧
 (function (d, s, id) {
@@ -135,10 +126,6 @@ function login(){
     js.src = "//connect.facebook.net/en_US/sdk.js"; 
     fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
-
-
-
-
 
 // Post a BASE64 Encoded PNG Image to facebook，以下程式為把照片po到facebook的方法，基本上這樣就可以不用動了，但思考authToken該怎麼拿到，因為這裡我並沒有把使用者登入的token載入到這函數內，所以它是不會得到token的
 function PostImageToFacebook(authToken) {
@@ -178,9 +165,6 @@ function PostImageToFacebook(authToken) {
         console.log(e);//錯誤訊息的log
     }
 }
-
-
-
 
 // Convert a data URI to blob把影像載入轉換函數
 function dataURItoBlob(dataURI) {
